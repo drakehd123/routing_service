@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>price</th>
+          <th>status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of click1">
+          <td scope="row">{{row.id}}</td>
+          <td>{{row.name}}</td>
+          <td>{{row.price}}</td>
+          <td>{{row.status? 'active' : 'deactive' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
